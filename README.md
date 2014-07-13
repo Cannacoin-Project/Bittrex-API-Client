@@ -28,7 +28,7 @@ There is an example.php included in this repo which provides a template for how 
 - The $params variable array directly relates to the Bittrex API request key/value parameters (eg. "currency" => "BTC")
 
 
-##### CLI Standard Input Streams are accepted:
+### CLI Standard Input Streams are accepted:
 The client.php also accepts standard input streams via a CLI layer (terminal etc.)
 
 format: path param1 value1 param2 value2 param3 value3
