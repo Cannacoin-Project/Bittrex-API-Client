@@ -7,20 +7,20 @@ Edit client.php
 ----------------
 Edit the client to include your Bittrex API Key and & Private Key
 
-define('API_KEY', '*YOUR_API_KEY_GOES_HERE*');
-
-define('PRIVATE_KEY', '*YOUR_PRIVATE_KEY_GOES_HERE*');
+>define('API_KEY', '*YOUR_API_KEY_GOES_HERE*');
+>define('PRIVATE_KEY', '*YOUR_PRIVATE_KEY_GOES_HERE*');
 
 
 Getting Started:
 ----------------
 There is an example.php included in this repo which provides a template for how to utilize this client.
 
+
 **Example.php:**
 
-The $path variable directly relates to the Bittrex API request method (eg. account/getbalances)
+- The $path variable directly relates to the Bittrex API request method (eg. account/getbalances)
 
-The $params variable array directly relates to the Bittrex API request key/value parameters (eg. "currency" => "BTC")
+- The $params variable array directly relates to the Bittrex API request key/value parameters (eg. "currency" => "BTC")
 
 
 CLI Standard Input Streams are accepted :
