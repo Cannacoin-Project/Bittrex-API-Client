@@ -8,6 +8,7 @@ Edit client.php
 Edit the client to include your Bittrex API Key and & Private Key
 
 >define('API_KEY', '*YOUR_API_KEY_GOES_HERE*');
+
 >define('PRIVATE_KEY', '*YOUR_PRIVATE_KEY_GOES_HERE*');
 
 
