@@ -9,9 +9,8 @@ Reference: [Bittrex API Documentation](https://bittrex.com/Home/Api)
 
 
 ### Edit client.php
-==================
-Edit the client to include your Bittrex API Key and & Private Key
 
+Edit the client to include your Bittrex API Key and & Private Key
 
 - define('API_KEY', '**YOUR_API_KEY_GOES_HERE**');
 
@@ -19,7 +18,6 @@ Edit the client to include your Bittrex API Key and & Private Key
 
 
 ### Example.php:
-==================
 There is an example.php included in this repo which provides a template for how to utilize this client.
 
 
@@ -31,7 +29,6 @@ There is an example.php included in this repo which provides a template for how 
 
 
 ##### CLI Standard Input Streams are accepted:
-==================
 The client.php also accepts standard input streams via a CLI layer (terminal etc.)
 
 format: path param1 value1 param2 value2 param3 value3
