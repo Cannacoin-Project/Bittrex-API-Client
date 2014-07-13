@@ -2,8 +2,6 @@ Bittrex-API-Client
 ==================
 A PHP Client for Bittrex.com's v1.1 API
 
-Reference: [Bittrex API Documentation](https://bittrex.com/Home/Api)
-
 
 # Getting Started:
 
@@ -26,6 +24,9 @@ There is an example.php included in this repo which provides a template for how 
 - The $path variable directly relates to the Bittrex API request method (eg. account/getbalances)
 
 - The $params variable array directly relates to the Bittrex API request key/value parameters (eg. "currency" => "BTC")
+
+Reference: [Bittrex API Documentation](https://bittrex.com/Home/Api)
+
 
 
 ### CLI Standard Input Streams are accepted:
