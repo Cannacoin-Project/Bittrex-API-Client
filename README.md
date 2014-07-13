@@ -7,6 +7,7 @@ Edit client.php
 ----------------
 Edit the client to include your Bittrex API Key and & Private Key
 
+
 >define('API_KEY', '**YOUR_API_KEY_GOES_HERE**');
 
 >define('PRIVATE_KEY', '**YOUR_PRIVATE_KEY_GOES_HERE**');
@@ -33,4 +34,5 @@ format: path param1 value1 param2 value2 param3 value3
 example: market/selllimit market CCN-BTC quanitity 250.24232211 rate 0.00100000
 
 
+-------------
 **Tips Appreciated!: 1NTyDTTrevTGQQbUGnMQMVgiPDqvYQboSp**
