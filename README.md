@@ -2,6 +2,7 @@ Bittrex-API-Client
 ==================
 A PHP Client for Bittrex.com's v1.1 API
 
+Reference: (https://bittrex.com/Home/Api)[Bittrex API Documentation]
 
 Edit client.php
 ----------------
