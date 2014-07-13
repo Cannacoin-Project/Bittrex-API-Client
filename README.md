@@ -19,9 +19,6 @@ Edit the client to include your Bittrex API Key and & Private Key
 #### Example.php:
 There is an example.php included in this repo which provides a template for how to utilize this client.
 
-
-**Example.php:**
-
 - The $path variable directly relates to the Bittrex API request method (eg. account/getbalances)
 
 - The $params variable array directly relates to the Bittrex API request key/value parameters (eg. "currency" => "BTC")
