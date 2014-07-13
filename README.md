@@ -5,8 +5,9 @@ A PHP Client for Bittrex.com's v1.1 API
 Reference: [Bittrex API Documentation](https://bittrex.com/Home/Api)
 
 
+# Getting Started:
 
-# Edit client.php
+## Edit client.php
 ----------------
 Edit the client to include your Bittrex API Key and & Private Key
 
@@ -28,7 +29,7 @@ There is an example.php included in this repo which provides a template for how 
 - The $params variable array directly relates to the Bittrex API request key/value parameters (eg. "currency" => "BTC")
 
 
-## CLI Standard Input Streams are accepted :
+### CLI Standard Input Streams are accepted :
 ----------------
 The client.php also accepts standard input streams via a CLI layer (terminal etc.)
 
