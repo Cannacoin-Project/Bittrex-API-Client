@@ -45,7 +45,6 @@ define('STDIN',fopen("php://stdin","r"));
 while($f = fgets(STDIN)) {
 	$f = rtrim($f, "\n");
 	$input = explode(' ', $f);
-	echo $input;
 	$path = $input[0];
 	$params = array();
 	if(count($input) > 2) {
