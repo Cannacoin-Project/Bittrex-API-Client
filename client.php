@@ -1,7 +1,7 @@
 <?php
 
-define('API_KEY', 'YOUR_API_KEY_GOES_HERE');
-define('PRIVATE_KEY', 'YOUR_PRIVATE_KEY_GOES_HERE');
+define('API_KEY', 'YOUR_API_KEY_HERE');
+define('PRIVATE_KEY', 'YOUR_PRIVATE_KEY_HERE');
 define('API_URL','https://bittrex.com/api/v1.1/');
 
 function apiQuery($path, array $req = array()) {
@@ -26,7 +26,7 @@ function apiQuery($path, array $req = array()) {
 	
 	// run the query
 	$response = curl_exec($curlHandler);
-	
+	echo $response;
 	if ($response === false) {
 		throw new Exception('Could not get reply: ' . curl_error($curlHandler));
 	}
@@ -35,19 +35,20 @@ function apiQuery($path, array $req = array()) {
 	if (!$json) {
 		throw new Exception('Invalid data received, please make sure connection is working and requested API exists');
 	}
+	
 	return $json;
 }
 
 // CLI Standard Input Streams are accepted 
 // format: path param1 value1 param2 value2 param3 value3
 // example: market/selllimit market CCN-BTC quanitity 250.24232211 rate 0.00100000
-define('STDIN',fopen("php://stdin","r"));
+
 while($f = fgets(STDIN)) {
 	$f = rtrim($f, "\n");
 	$input = explode(' ', $f);
 	$path = $input[0];
 	$params = array();
-	if(count($input) > 2) {
+	if(count($input) >= 2) {
 		$rest = array_slice($input, 2);
 		$i = 0;
 		$key = '';
