@@ -1,7 +1,7 @@
 <?php
 
-define('API_KEY', 'YOUR_API_KEY_HERE');
-define('PRIVATE_KEY', 'YOUR_PRIVATE_KEY_HERE');
+define('API_KEY', 'b27015e9a20e4d4085042b7a5b9a7f27');
+define('PRIVATE_KEY', '98a5638824354fb595c2bcbdf82282f1');
 define('API_URL','https://bittrex.com/api/v1.1/');
 
 function apiQuery($path, array $req = array()) {
@@ -48,8 +48,8 @@ while($f = fgets(STDIN)) {
 	$input = explode(' ', $f);
 	$path = $input[0];
 	$params = array();
-	if(count($input) >= 2) {
-		$rest = array_slice($input, 2);
+	if(count($input) > 2) {
+		$rest = array_slice($input, 1);
 		$i = 0;
 		$key = '';
 		foreach($rest as $val) {
