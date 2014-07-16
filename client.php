@@ -26,7 +26,7 @@ function apiQuery($path, array $req = array()) {
 	
 	// run the query
 	$response = curl_exec($curlHandler);
-	echo $response;
+	
 	if ($response === false) {
 		throw new Exception('Could not get reply: ' . curl_error($curlHandler));
 	}
@@ -68,4 +68,3 @@ while($f = fgets(STDIN)) {
 	exit();
 	
 } 
-
